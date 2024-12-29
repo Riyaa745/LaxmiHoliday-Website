@@ -529,3 +529,35 @@ form {
     color: white;
     margin-top: 1.5rem;
 }
+
+/* css of tracker and whatsapp fixed */
+.tracker{
+    background-image: url(assets/location\ img.png );
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+    background-color: red;
+    position: fixed;
+    z-index: 1;
+    transform: translate(86rem,20rem);
+    animation-name: track;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes track{
+    0%{}
+
+    100%{
+        box-shadow: 0 0 0 0.5rem red;
+    }
+}
+
+.whatsapp{
+    position: fixed;
+    transform: translate(92rem, 39.8rem);
+    z-index: 1;
+}
